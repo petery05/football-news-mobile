@@ -40,13 +40,13 @@ Widget build(BuildContext context) {
         ),
         ListTile(
             leading: const Icon(Icons.home_outlined),
-            title: const Text('Home'),
+            title: const Text('News List'),
             // Bagian redirection ke MyHomePage
             onTap: () {
             Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const NewsEntryListPage(),
+                    builder: (context) => MyHomePage(),
                 ));
             },
         ),
@@ -69,9 +69,20 @@ Widget build(BuildContext context) {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => MyHomePage()));
+                    builder: (context) => NewsEntryListPage()));
             },
-        )
+        ),
+        ListTile(
+          leading: const Icon(Icons.add_reaction_rounded),
+          title: const Text('News List'),
+          onTap: () {
+              // Route to news list page
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const NewsEntryListPage()),
+              );
+          },
+      ),
         ],
     ),
     );
