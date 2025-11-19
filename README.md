@@ -1,6 +1,6 @@
 # football_news
 
-A new Flutter project. tes
+A new Flutter project.
 
 ## Getting Started
 
